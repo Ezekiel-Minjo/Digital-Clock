@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="clock-container">
+    <div class="time-display" id="timeDisplay">00:00:00</div>
+    <div class="date-display" id="dateDisplay">Loading...</div>
+
+    <div class="controls">
+        <button class="btn active" id="format12" onclick="setTimeFormat(12)">12 Hour</button>
+        <button class="btn" id="format24" onclick="setTimeFormat(24)">24 Hour</button>
+        <button class="btn" id="toggleSeconds" onclick="toggleSeconds()">Hide Seconds</button>
+   </div>
+
+   <div class="timezone-info" id="timezoneInfo">****</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
